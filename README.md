@@ -42,4 +42,10 @@
 >CGAN added the condition (indexing label) network to DCGAN, and CGAN can generate the specific label fake data as your appointment.
 
 ### Wasserstein GAN (WGAN)
->WGAN
+>WGAN apply the wasserstein loss to promote the stability of training.
+
+### Least-square GAN (LSGAN)
+>There are two problems being addressend on Wasserstein GAN paper, they are concerned the stability of training and the generative quality. But Wasserstein GAN only solve the convergent stability problem. LSGAN apply the least-square losss to solve these two problems about GAN. 
+
+### Auxiliary Classifier GAN (ACGAN)
+> ACGAN is similar in principle to CGAN. For both CGAN and ACGAN, the generator inputs are noise and its label. The output is a fake image belonging to the input class label. For the generator, CGAN only detect input wheather be real or fake. And ACGAN not only do it, but also classify its class.
